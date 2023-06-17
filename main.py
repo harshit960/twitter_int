@@ -9,13 +9,13 @@ time.sleep(3)
 listt=[]
 
 
-for i in range(50):
+for i in range(100):
         element = driver.find_elements(By.CSS_SELECTOR, "[data-testid='tweetText']")
         for x in element:
             if x:
                 listt.append(x.text)
         driver.execute_script("window.scrollBy(0,300)","")
-        time.sleep(.01)
+        time.sleep(.005)
 #print(listt)
 #print(len(listt))
 
